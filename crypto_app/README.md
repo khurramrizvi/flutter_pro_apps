@@ -14,3 +14,20 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Screenshot
+
+<table>
+  <tr><td> Sliver Open</td>
+    <td> Sliver Collapsed </td>
+  </tr>
+  
+  <tr>
+  <td>
+    <img src = ss/crypto1.png width= 360 height = 640>
+  </td>
+  <td>
+    <img src = ss/crypto2.png width= 360 height = 640>
+  </td>
+ </tr>
+ </table>
