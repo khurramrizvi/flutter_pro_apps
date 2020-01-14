@@ -19,15 +19,19 @@ samples, guidance on mobile development, and a full API reference.
 
 <table>
   <tr><td> Sliver Open</td>
+    <td>Nav Drawer Open</td>
     <td> Sliver Collapsed </td>
   </tr>
   
   <tr>
   <td>
-    <img src = ss/crypto1.png width= 360 height = 640>
+    <img src = ss/crypto1.png width= 270 height = 480>
   </td>
   <td>
-    <img src = ss/crypto2.png width= 360 height = 640>
+    <img src = ss/crypto4.png width= 270 height = 480>
+  </td>
+  <td>
+    <img src = ss/crypto3.png width= 270 height = 480>
   </td>
  </tr>
  </table>
