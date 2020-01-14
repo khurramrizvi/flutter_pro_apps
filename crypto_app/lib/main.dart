@@ -11,8 +11,8 @@ void main() async{
     title: "CrytoApp",
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      primaryColor: Colors.pink,
-      accentColor: Colors.pinkAccent
+      primaryColor: Colors.deepPurple,
+      accentColor: Colors.deepPurple[300]
     ),
     home: MyApp(currencies),
    )
@@ -24,9 +24,115 @@ class MyApp extends StatelessWidget {
   final List _currencies;
   MyApp(this._currencies);
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        elevation: 10,
+        child: Column(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(colors: [Colors.indigo, Colors.purpleAccent])
+              ),
+              arrowColor: Colors.white,
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Text("KR",style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.deepPurple
+                ),),
+              ),
+              accountName: Text("Khurram Rizvi"),
+              accountEmail: Text("khurramrizvi@github.com"),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("Types of Coins",style: TextStyle(
+                fontSize: 20,fontWeight: FontWeight.bold
+              ),
+              ),
+            ),
+
+            Divider(
+          height: 16,
+            ),
+
+            ListTile(
+              onTap: (){},
+              leading: CircleAvatar(
+                backgroundColor: Colors.yellow,
+                child: Text("B",style: TextStyle(color: Colors.black),),
+              ),
+              title: Text("Bitcoin", style: TextStyle(fontSize: 18),),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+            
+            Padding(
+              padding: EdgeInsets.all(8),
+            ),
+
+            ListTile(
+              onTap: (){},
+              leading: CircleAvatar(
+                backgroundColor: Colors.red,
+                child: Text("E",style: TextStyle(color: Colors.black),),
+              ),
+              title: Text("Ethereum", style: TextStyle(fontSize: 18),),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+            Padding(
+              padding: EdgeInsets.all(8),
+            ),
+
+            ListTile(
+              onTap: (){},
+              leading: CircleAvatar(
+                backgroundColor: Colors.blueAccent,
+                child: Text("X",style: TextStyle(color: Colors.black),),
+              ),
+              title: Text("XRP", style: TextStyle(fontSize: 18),),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+            Padding(
+              padding: EdgeInsets.all(8),
+            ),
+
+            ListTile(
+              onTap: (){},
+              leading: CircleAvatar(
+                backgroundColor: Colors.green,
+                child: Text("T",style: TextStyle(color: Colors.black),),
+              ),
+              title: Text("Tether", style: TextStyle(fontSize: 18),),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+
+            Padding(
+              padding: EdgeInsets.all(8),
+            ),
+
+            ListTile(
+              onTap: (){},
+              leading: CircleAvatar(
+                backgroundColor: Colors.purpleAccent,
+                child: Text("L",style: TextStyle(color: Colors.black),),
+              ),
+              title: Text("Litecoin", style: TextStyle(fontSize: 18),),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+            
+            
+
+
+          ],
+        )
+      ),
       /*appBar: AppBar(
         backgroundColor: Colors.grey[300],
         elevation: 10,
@@ -37,11 +143,10 @@ class MyApp extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            leading: Icon(Icons.menu,color: Colors.white,),
-            expandedHeight: 150,
+            expandedHeight: 250,
             floating: false,
             centerTitle: true,
-            elevation: 50,
+            elevation: 10,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text("Crypto",style: TextStyle(
